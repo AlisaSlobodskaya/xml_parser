@@ -1,6 +1,7 @@
-##Book catalog parser (.xml)
-###Description
+<h1>Book catalog parser (.xml)</h1>
+<h2>Description</h2>
 This is an application for parsing a book catalog presented in the following format:
+
 ```
 <catalog>
     <book vendor_code="bk101">
@@ -14,12 +15,14 @@ This is an application for parsing a book catalog presented in the following for
     </book>
 </catalog>
 ```
-###Data import to database
-The application supports the import of parsed data into the **PostgreSQL** database.
-* Eliminate duplicates on both sides.
-* Batch data processing for better performance.
+
+<h2>Data import to database</h2>
+The application supports the import of parsed data into the <b>PostgreSQL</b> database.
+<ul><li> Eliminate duplicates on both sides.</li>
+<li> Batch data processing for better performance.</li></ul>
 <br>
-<br>_Book table_
+<br><em>Book table</em>
+
 ```
 CREATE TABLE Books
 (
@@ -33,8 +36,10 @@ CREATE TABLE Books
     description text    not null
 )
 ```
+
 ![](https://sun9-19.userapi.com/impf/v4aYO6KSneFhLDLxsHnpD9b0dYP5Q2bHEdEf2w/BCgCmKKdlFo.jpg?size=692x426&quality=96&sign=e8dead301e3bcafff43b0840c1a93f4e&type=album)
-###Application settings
+<h2>Application settings</h2>
+
 1. Connection to database
 
 To connect to the database, enter your personal data in the file **database.properties**
